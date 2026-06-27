@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@media print {
+  /* Setup clean white print canvas */
+  body {
+    background: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide headers, footers, controls, sidebars, forms */
+  .no-print, 
+  header, 
+  footer, 
+  nav, 
+  button, 
+  form, 
+  aside {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Force parent containers to occupy standard flow without background overlays */
+  #root, 
+  main, 
+  div {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Structure perfect isolated letter page */
+  #resume-printable-area {
+    display: block !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 1.5in 1in !important; /* Elegant standard margins */
+    border: none !important;
+    box-shadow: none !important;
+    background: white !important;
+  }
+}
+
+

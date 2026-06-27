@@ -1,0 +1,6 @@
+{
+  "name": "AI Resume Studio",
+  "description": "An AI-powered Resume Generator and Grader designed specifically for college students to build, evaluate, and optimize their resumes for recruiter ATS systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
